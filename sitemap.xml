@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://koreaclub.asia/</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://koreaclub.asia/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://koreaclub.asia/ch"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://koreaclub.asia/jp"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://koreaclub.asia/en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://koreaclub.asia/"/>
+    <lastmod>2026-06-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://koreaclub.asia/ch</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://koreaclub.asia/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://koreaclub.asia/ch"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://koreaclub.asia/jp"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://koreaclub.asia/en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://koreaclub.asia/"/>
+    <lastmod>2026-06-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://koreaclub.asia/jp</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://koreaclub.asia/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://koreaclub.asia/ch"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://koreaclub.asia/jp"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://koreaclub.asia/en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://koreaclub.asia/"/>
+    <lastmod>2026-06-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://koreaclub.asia/en</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://koreaclub.asia/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://koreaclub.asia/ch"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://koreaclub.asia/jp"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://koreaclub.asia/en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://koreaclub.asia/"/>
+    <lastmod>2026-06-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+</urlset>

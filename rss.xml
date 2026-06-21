@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>KOREACLUB</title>
+    <link>https://koreaclub.asia/</link>
+    <atom:link href="https://koreaclub.asia/rss.xml" rel="self" type="application/rss+xml"/>
+    <description>강남·홍대·압구정·청담 클럽 게스트·테이블 예약 안내</description>
+    <language>ko</language>
+    <lastBuildDate>Sat, 21 Jun 2026 00:00:00 +0900</lastBuildDate>
+    <item>
+      <title>강남 클럽 · 에이스/플팔</title>
+      <link>https://koreaclub.asia/</link>
+      <description>강남구 대표 클럽 지역 안내 및 게스트·테이블 예약.</description>
+      <pubDate>Sat, 21 Jun 2026 00:00:00 +0900</pubDate>
+      <guid isPermaLink="false">koreaclub-1</guid>
+    </item>
+    <item>
+      <title>홍대 클럽 · 버뮤다</title>
+      <link>https://koreaclub.asia/</link>
+      <description>마포구 역동적 나이트라이프 클럽 안내.</description>
+      <pubDate>Sat, 21 Jun 2026 00:00:00 +0900</pubDate>
+      <guid isPermaLink="false">koreaclub-2</guid>
+    </item>
+    <item>
+      <title>압구정 클럽 · 코어/컬러/코드</title>
+      <link>https://koreaclub.asia/</link>
+      <description>럭셔리·프라이빗 상권 클럽 안내.</description>
+      <pubDate>Sat, 21 Jun 2026 00:00:00 +0900</pubDate>
+      <guid isPermaLink="false">koreaclub-3</guid>
+    </item>
+    <item>
+      <title>청담 클럽 · +82</title>
+      <link>https://koreaclub.asia/</link>
+      <description>대한민국 클러빙 정점, 청담 클럽 안내.</description>
+      <pubDate>Sat, 21 Jun 2026 00:00:00 +0900</pubDate>
+      <guid isPermaLink="false">koreaclub-4</guid>
+    </item>
+  </channel>
+</rss>

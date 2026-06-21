@@ -1,0 +1,18 @@
+User-agent: *
+Allow: /
+
+# Search engines (Korea: Naver/Daum/Google · China: Baidu · Japan: Yahoo!JP/Google · US: Google)
+User-agent: Yeti
+Allow: /
+User-agent: Daumoa
+Allow: /
+User-agent: Baiduspider
+Allow: /
+User-agent: Googlebot
+Allow: /
+User-agent: Bingbot
+Allow: /
+User-agent: Slurp
+Allow: /
+
+Sitemap: https://koreaclub.asia/sitemap.xml
