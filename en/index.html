@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>KOREACLUB · Gangnam, Hongdae, Apgujeong &amp; Cheongdam Club Guestlist &amp; Tables</title>
+<meta name="description" content="Guestlist entry and table reservations for Gangnam, Hongdae, Apgujeong and Cheongdam clubs in Seoul. Pricing, interiors and guest info in one place. Contact via KakaoTalk or text.">
+<meta name="theme-color" content="#0a0a0f">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/favicon.ico">
+<link rel="canonical" href="https://koreaclub.asia/en">
+<meta property="og:site_name" content="KOREACLUB">
+<meta property="og:title" content="KOREACLUB · Gangnam, Hongdae, Apgujeong &amp; Cheongdam Club Guestlist &amp; Tables">
+<meta property="og:description" content="Guestlist entry and table reservations for Gangnam, Hongdae, Apgujeong and Cheongdam clubs in Seoul. Pricing, interiors and guest info in one place. Contact via KakaoTalk or text.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
+<meta property="og:url" content="https://koreaclub.asia/en">
+<meta property="og:image" content="https://koreaclub.asia/assets/hero/gangnam.webp">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="alternate" hreflang="ko" href="https://koreaclub.asia/">
+<link rel="alternate" hreflang="zh" href="https://koreaclub.asia/ch">
+<link rel="alternate" hreflang="ja" href="https://koreaclub.asia/jp">
+<link rel="alternate" hreflang="en" href="https://koreaclub.asia/en">
+<link rel="alternate" hreflang="x-default" href="https://koreaclub.asia/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800;900&display=swap" rel="stylesheet">
+<link rel="alternate" type="application/rss+xml" title="KOREACLUB" href="/rss.xml">
+<style>
+:root{
+  --bg:#0a0a0f;
+  --bg-2:#12121c;
+  --surface:#171723;
+  --surface-2:#1f1f30;
+  --line:rgba(255,255,255,.10);
+  --line-strong:rgba(255,255,255,.18);
+  --text:#f4f4f8;
+  --muted:#a3a3b2;
+  --muted-2:#7c7c8c;
+  --violet:#c084fc;
+  --violet-deep:#a855f7;
+  --magenta:#f472d0;
+  --glow:0 0 22px rgba(192,132,252,.45);
+  --grad:linear-gradient(110deg,var(--violet) 0%,var(--magenta) 100%);
+  --cta-h:64px;
+  --header-h:60px;
+  --r:16px;
+  --ease:cubic-bezier(.22,.61,.36,1);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{height:100%}
+body{
+  background:var(--bg);
+  color:var(--text);
+  font-family:'Outfit','Pretendard','Apple SD Gothic Neo','Noto Sans KR','Malgun Gothic',system-ui,sans-serif;
+  -webkit-font-smoothing:antialiased;
+  overflow:hidden;
+  -webkit-tap-highlight-color:transparent;
+}
+img,video{display:block;max-width:100%}
+button{font-family:inherit;color:inherit;background:none;border:none;cursor:pointer}
+a{color:inherit;text-decoration:none}
+:focus-visible{outline:2px solid var(--violet);outline-offset:3px;border-radius:6px}
+
+/* ambient grain */
+body::after{
+  content:"";position:fixed;inset:0;pointer-events:none;z-index:60;opacity:.05;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  mix-blend-mode:overlay;
+}
+
+/* ===================== APP SHELL ===================== */
+.app{position:fixed;inset:0;overflow:hidden;background:var(--bg)}
+
+/* ===================== HEADER ===================== */
+.header{
+  position:absolute;top:0;left:0;right:0;height:var(--header-h);z-index:40;
+  display:flex;align-items:center;justify-content:space-between;
+  padding:0 22px;
+  background:linear-gradient(180deg,rgba(8,8,14,.78) 0%,rgba(8,8,14,0) 100%);
+}
+.brand-wrap{display:flex;align-items:center;gap:18px}
+.brand{display:flex;align-items:center;gap:9px;font-weight:900;letter-spacing:.5px;font-size:17px}
+.brand .dot{width:9px;height:9px;border-radius:50%;background:var(--grad);box-shadow:var(--glow)}
+.brand span{color:var(--violet)}
+
+.dnav{display:flex;gap:4px}
+.dnav button{
+  font-size:13px;font-weight:600;letter-spacing:.3px;color:var(--muted);
+  padding:8px 14px;border-radius:10px;transition:.25s var(--ease);position:relative;
+}
+.dnav button:hover{color:var(--text)}
+.dnav button.on{color:var(--text);background:rgba(255,255,255,.07)}
+.dnav button.on::after{
+  content:"";position:absolute;left:14px;right:14px;bottom:4px;height:2px;border-radius:2px;background:var(--grad);
+}
+
+.langs{display:flex;gap:7px;align-items:center}
+.langs button{
+  width:30px;height:20px;border-radius:4px;overflow:hidden;padding:0;display:block;
+  opacity:.5;border:1px solid transparent;transition:.2s var(--ease);
+}
+.langs button img{width:100%;height:100%;object-fit:cover;display:block}
+.langs button:hover{opacity:.85}
+.langs button.on{opacity:1;border-color:var(--violet);box-shadow:0 0 0 1px var(--violet),0 0 10px rgba(192,132,252,.4)}
+
+.header-right{display:flex;align-items:center;gap:12px}
+.music-toggle{width:38px;height:38px;flex:0 0 auto;border-radius:10px;display:flex;align-items:center;justify-content:center;
+  color:var(--text);background:rgba(255,255,255,.06);border:1px solid var(--line);transition:.2s var(--ease)}
+.music-toggle:hover{background:rgba(255,255,255,.12)}
+.music-toggle svg{width:18px;height:18px}
+.music-toggle .ic-off{display:none}
+.music-toggle.muted .ic-on{display:none}
+.music-toggle.muted .ic-off{display:block}
+.music-toggle.muted{color:var(--muted-2)}
+.music-toggle.playing{color:var(--violet);border-color:rgba(192,132,252,.5);box-shadow:0 0 12px rgba(192,132,252,.25)}
+
+/* ===================== HERO ===================== */
+.hero{position:absolute;inset:0;overflow:hidden}
+.hero-bg{position:absolute;inset:0;z-index:0;background:#000}
+.hero-poster{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:brightness(.62) saturate(1.05);transition:opacity .6s var(--ease)}
+.hero-video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity .8s var(--ease)}
+.hero-video.show{opacity:1}
+.hero-scrim{position:absolute;inset:0;z-index:1;pointer-events:none;
+  background:
+   linear-gradient(95deg,rgba(8,8,14,.92) 0%,rgba(8,8,14,.6) 38%,rgba(8,8,14,.15) 62%,rgba(8,8,14,.55) 100%),
+   linear-gradient(0deg,rgba(8,8,14,.9) 0%,rgba(8,8,14,0) 30%);
+}
+
+.hero-inner{
+  position:relative;z-index:2;height:100%;
+  display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);align-items:center;gap:40px;
+  padding:calc(var(--header-h) + 24px) clamp(22px,5vw,88px) calc(var(--cta-h) + 28px);
+}
+
+/* content */
+.content{max-width:560px}
+.kicker{font-size:11px;font-weight:600;letter-spacing:3.5px;color:var(--muted);text-transform:uppercase;margin-bottom:14px}
+.genre{
+  display:inline-block;font-size:11.5px;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;
+  color:var(--violet);margin-bottom:14px;
+}
+.title{
+  font-size:clamp(46px,6.4vw,88px);font-weight:900;line-height:.98;letter-spacing:-1.5px;
+  text-shadow:0 8px 40px rgba(0,0,0,.5);
+}
+.title em{font-style:normal;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.desc{margin-top:18px;font-size:clamp(14px,1.5vw,16px);font-weight:300;line-height:1.65;color:#d7d7e0;max-width:440px}
+.meta{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}
+.meta .chip{
+  display:inline-flex;align-items:center;gap:7px;font-size:12.5px;font-weight:500;color:#cfcfda;
+  padding:7px 13px;border-radius:999px;background:rgba(255,255,255,.06);border:1px solid var(--line);
+  backdrop-filter:blur(8px);
+}
+.meta .chip svg{width:14px;height:14px;color:var(--violet)}
+.btn-detail{
+  margin-top:28px;display:inline-flex;align-items:center;gap:10px;
+  font-size:14px;font-weight:700;letter-spacing:.4px;color:#0a0a0f;
+  padding:14px 26px;border-radius:12px;background:var(--grad);
+  box-shadow:0 10px 30px rgba(192,132,252,.32);transition:.25s var(--ease);
+}
+.btn-detail:hover{transform:translateY(-2px);box-shadow:0 14px 38px rgba(192,132,252,.5)}
+.btn-detail:active{transform:translateY(0) scale(.98)}
+.btn-detail svg{width:16px;height:16px}
+
+/* photo cards (preview of other districts) */
+.photo-row{justify-self:end;width:100%;max-width:520px;display:flex;align-items:center;gap:0}
+.photos{flex:1;width:100%}
+.photo-track{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.m-arrow{display:none;flex:0 0 auto;width:40px;height:72px;border-radius:12px;align-items:center;justify-content:center;
+  background:rgba(255,255,255,.08);border:1px solid var(--line-strong);color:#fff;backdrop-filter:blur(8px);transition:.25s var(--ease)}
+.m-arrow:active{background:var(--violet);color:#0a0a0f;border-color:var(--violet)}
+.m-arrow svg{width:18px;height:18px}
+.photo{
+  position:relative;aspect-ratio:3/4.2;border-radius:18px;overflow:hidden;cursor:pointer;
+  background:var(--surface);border:1px solid var(--line);
+  box-shadow:0 24px 50px rgba(0,0,0,.45);transition:.35s var(--ease);
+}
+.photo:nth-child(2){transform:translateY(-22px)}
+.photo img{width:100%;height:100%;object-fit:cover;transition:.5s var(--ease)}
+.photo::after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(8,8,14,.7),transparent 55%)}
+.photo:hover{transform:translateY(-6px);border-color:var(--line-strong)}
+.photo:nth-child(2):hover{transform:translateY(-28px)}
+.photo:hover img{transform:scale(1.06)}
+.photo-name{position:absolute;left:0;right:0;bottom:0;z-index:2;padding:12px 12px 11px;
+  font-size:13px;font-weight:800;letter-spacing:.2px;color:#fff;text-shadow:0 2px 10px rgba(0,0,0,.7)}
+
+/* district arrows + indicator */
+.hero-nav{position:absolute;left:0;right:0;bottom:calc(var(--cta-h) + 16px);z-index:3;
+  display:flex;align-items:center;justify-content:center;gap:16px;pointer-events:none}
+.hero-nav .arrow{pointer-events:auto;width:44px;height:44px;border-radius:12px;display:flex;align-items:center;justify-content:center;
+  background:rgba(255,255,255,.07);border:1px solid var(--line-strong);color:#fff;backdrop-filter:blur(10px);transition:.25s var(--ease)}
+.hero-nav .arrow:hover{background:var(--violet);border-color:var(--violet);color:#0a0a0f}
+.hero-nav .arrow svg{width:18px;height:18px}
+.dots{pointer-events:auto;display:flex;gap:8px;align-items:center}
+.dots .d{width:8px;height:8px;border-radius:50%;background:rgba(255,255,255,.28);transition:.3s var(--ease)}
+.dots .d.on{width:26px;border-radius:99px;background:var(--grad)}
+
+/* ===================== BOTTOM CTA ===================== */
+.cta-bar{
+  position:absolute;left:0;right:0;bottom:0;z-index:45;height:var(--cta-h);
+  display:flex;align-items:center;justify-content:center;gap:20px;padding:0 18px;
+  background:rgba(10,10,16,.82);backdrop-filter:blur(16px);border-top:1px solid var(--line);
+  padding-bottom:env(safe-area-inset-bottom,0);
+}
+.cta-label{display:flex;flex-direction:column;line-height:1.2}
+.cta-label .t1{font-size:13px;font-weight:700}
+.cta-label .t2{font-size:11px;color:var(--muted)}
+.cta-btns{display:flex;gap:10px}
+.cta-btn{
+  display:inline-flex;align-items:center;gap:9px;font-size:13.5px;font-weight:700;letter-spacing:.2px;
+  padding:11px 18px;border-radius:11px;color:#0a0a0f;background:var(--grad);transition:.22s var(--ease);
+  box-shadow:0 6px 18px rgba(192,132,252,.28);white-space:nowrap;
+}
+.cta-btn.ghost{background:rgba(255,255,255,.08);color:var(--text);border:1px solid var(--line-strong);box-shadow:none}
+.cta-btn:hover{transform:translateY(-2px)}
+.cta-btn.ghost:hover{background:rgba(255,255,255,.14)}
+.cta-btn svg{width:16px;height:16px}
+
+/* ===================== MODAL ===================== */
+.modal-root{position:fixed;inset:0;z-index:100;display:none;align-items:center;justify-content:center;padding:24px}
+.modal-root.open{display:flex}
+.modal-bd{position:absolute;inset:0;background:rgba(5,5,9,.74);backdrop-filter:blur(7px);animation:fade .3s var(--ease)}
+.modal{
+  position:relative;width:min(960px,100%);max-height:88vh;display:flex;flex-direction:column;
+  background:linear-gradient(180deg,var(--surface) 0%,var(--bg-2) 100%);
+  border:1px solid var(--line-strong);border-radius:22px;overflow:hidden;
+  box-shadow:0 40px 120px rgba(0,0,0,.6);animation:pop .42s var(--ease);
+}
+.modal-head{display:flex;align-items:center;justify-content:space-between;padding:18px 20px;border-bottom:1px solid var(--line)}
+.open-badge{
+  display:inline-flex;align-items:center;gap:10px;font-size:13px;font-weight:700;letter-spacing:.6px;
+  padding:9px 16px;border-radius:999px;background:rgba(255,255,255,.05);border:1px solid var(--line-strong);
+}
+.open-badge .live{position:relative;width:9px;height:9px;border-radius:50%;background:#34d399;box-shadow:0 0 10px #34d399}
+.open-badge .live::after{content:"";position:absolute;inset:-5px;border-radius:50%;border:1px solid #34d399;animation:ping 1.8s ease-out infinite}
+.open-badge b{color:var(--violet);font-weight:800}
+.modal-close{width:38px;height:38px;border-radius:11px;display:flex;align-items:center;justify-content:center;color:var(--muted);transition:.2s var(--ease)}
+.modal-close:hover{background:rgba(255,255,255,.08);color:#fff}
+.modal-close svg{width:20px;height:20px}
+
+.tabs{display:flex;gap:6px;padding:14px 20px 0}
+.tab{
+  flex:0 0 auto;font-size:13.5px;font-weight:700;letter-spacing:.3px;color:var(--muted);
+  padding:10px 18px;border-radius:11px 11px 0 0;transition:.2s var(--ease);position:relative;
+}
+.tab:hover{color:var(--text)}
+.tab.on{color:var(--text);background:var(--surface-2)}
+.tab.on::after{content:"";position:absolute;left:0;right:0;bottom:-1px;height:2px;background:var(--grad)}
+
+.tab-body{padding:20px;overflow:auto;flex:1}
+.panel{display:none}
+.panel.on{display:block;animation:fade .25s var(--ease)}
+
+/* gallery */
+.gallery{position:relative;border-radius:16px;overflow:hidden;background:#000;border:1px solid var(--line)}
+.gallery .frame{position:relative;width:100%;height:min(58vh,520px);background:#000;overflow:hidden}
+.gallery .gbg{position:absolute;inset:0;background-size:cover;background-position:center;filter:blur(36px) brightness(.38);transform:scale(1.25);transition:.45s var(--ease);z-index:0}
+.gallery .frame img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;opacity:0;transition:opacity .4s var(--ease);z-index:1}
+.gallery .frame img.on{opacity:1}
+.gallery .gnav{position:absolute;top:50%;transform:translateY(-50%);width:42px;height:42px;border-radius:50%;
+  display:flex;align-items:center;justify-content:center;background:rgba(10,10,15,.55);border:1px solid var(--line-strong);
+  color:#fff;backdrop-filter:blur(6px);transition:.2s var(--ease);z-index:2}
+.gallery .gnav:hover{background:var(--violet);color:#0a0a0f}
+.gallery .gnav.prev{left:12px}
+.gallery .gnav.next{right:12px}
+.gallery .gnav svg{width:18px;height:18px}
+.gdots{display:flex;justify-content:center;gap:7px;padding:14px 0 2px}
+.gdots .gd{width:7px;height:7px;border-radius:50%;background:rgba(255,255,255,.25);transition:.25s var(--ease);cursor:pointer}
+.gdots .gd.on{width:22px;border-radius:99px;background:var(--grad)}
+.swipe-hint{text-align:center;font-size:11.5px;color:var(--muted-2);margin-top:8px;letter-spacing:.3px}
+
+/* qna */
+.qna{display:flex;flex-direction:column;gap:10px}
+.qitem{border:1px solid var(--line);border-radius:14px;background:var(--surface-2);overflow:hidden}
+.qitem summary{
+  list-style:none;cursor:pointer;display:flex;align-items:center;gap:12px;padding:16px 18px;
+  font-size:14.5px;font-weight:600;color:var(--text);
+}
+.qitem summary::-webkit-details-marker{display:none}
+.qitem summary .qmk{flex:0 0 auto;width:22px;height:22px;border-radius:7px;display:flex;align-items:center;justify-content:center;
+  background:var(--grad);color:#0a0a0f;font-size:12px;font-weight:900}
+.qitem summary .chev{margin-left:auto;width:16px;height:16px;color:var(--muted);transition:.25s var(--ease)}
+.qitem[open] summary .chev{transform:rotate(180deg)}
+.qitem .ans{padding:0 18px 18px 52px;font-size:13.5px;line-height:1.7;color:var(--muted);font-weight:300}
+
+/* ===================== TOAST ===================== */
+.toast-wrap{position:fixed;left:0;right:0;bottom:calc(var(--cta-h) + 18px);z-index:120;display:flex;justify-content:center;pointer-events:none}
+.toast{background:var(--surface-2);border:1px solid var(--line-strong);color:var(--text);font-size:13.5px;font-weight:600;
+  padding:12px 20px;border-radius:12px;box-shadow:0 12px 30px rgba(0,0,0,.5);opacity:0;transform:translateY(12px);
+  transition:.3s var(--ease)}
+.toast.show{opacity:1;transform:translateY(0)}
+
+/* ===================== ANIM ===================== */
+@keyframes fade{from{opacity:0}to{opacity:1}}
+@keyframes pop{from{opacity:0;transform:translateY(24px) scale(.97)}to{opacity:1;transform:none}}
+@keyframes ping{from{transform:scale(.8);opacity:.8}to{transform:scale(2.1);opacity:0}}
+@keyframes slidein{to{transform:translateX(0)}}
+@keyframes rise{from{opacity:0;transform:translateY(40px);filter:blur(12px)}to{opacity:1;transform:none;filter:blur(0)}}
+.anim-rise>*{opacity:0;animation:rise .7s var(--ease) forwards}
+.anim-rise>*:nth-child(1){animation-delay:.05s}
+.anim-rise>*:nth-child(2){animation-delay:.13s}
+.anim-rise>*:nth-child(3){animation-delay:.21s}
+.anim-rise>*:nth-child(4){animation-delay:.29s}
+.anim-rise>*:nth-child(5){animation-delay:.37s}
+.anim-rise>*:nth-child(6){animation-delay:.45s}
+
+/* ===================== RESPONSIVE ===================== */
+@media (max-width:980px){
+  .hero-inner{display:flex;flex-direction:column;justify-content:flex-end;gap:18px;
+    padding:calc(var(--header-h) + 16px) 24px calc(var(--cta-h) + 64px)}
+  .content{max-width:none;order:1}
+  .photo-row{order:2;max-width:none;width:100%}
+}
+@media (max-width:768px){
+  :root{--cta-h:70px;--header-h:56px}
+  .dnav{display:none}
+  .hero-inner{gap:14px;padding:0 16px calc(var(--cta-h) + 18px)}
+  .content{width:100%;order:1}
+  .title{font-size:clamp(40px,12vw,60px)}
+  .desc{font-size:14px;max-width:none}
+  .meta{margin-top:18px}
+  .photo-row{order:2;display:flex;align-items:stretch;gap:8px}
+  .m-arrow{display:flex;width:26px;height:auto}
+  .m-arrow svg{width:15px;height:15px}
+  .photos{flex:1;min-width:0}
+  .photo-track{gap:7px}
+  .photo{aspect-ratio:3/4.3;border-radius:14px;box-shadow:0 14px 30px rgba(0,0,0,.4)}
+  .photo:nth-child(2){transform:none}
+  .photo:nth-child(2):hover{transform:none}
+  .photo-name{font-size:12px;padding:9px 9px 9px}
+  .hero-nav{display:none}
+  .cta-label .t2{display:none}
+  .cta-bar{gap:14px;padding:0 12px}
+  .cta-btn{padding:11px 14px;font-size:13px}
+  .modal-root{padding:0;align-items:flex-end}
+  .modal{max-height:92vh;border-radius:22px 22px 0 0;width:100%}
+  .tabs{overflow-x:auto}
+  .gallery .frame{height:min(56vh,440px)}
+}
+@media (max-width:420px){
+  .cta-label{display:none}
+  .cta-btns{flex:1;justify-content:center}
+  .cta-btn{flex:1;justify-content:center;padding:12px 8px}
+  .m-arrow{width:24px}
+}
+
+@media (prefers-reduced-motion:reduce){
+  *{animation-duration:.001s!important;transition-duration:.001s!important}
+  .anim-rise>*{opacity:1}
+}
+</style>
+</head>
+<body>
+<div class="app">
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="brand-wrap">
+      <div class="brand"><span class="dot"></span>KOREA<span>CLUB</span></div>
+      <div class="langs" id="langs" aria-label="언어 선택"></div>
+    </div>
+    <div class="header-right">
+      <nav class="dnav" id="dnav" aria-label="지역 선택"></nav>
+      <button class="music-toggle playing" id="musicToggle" aria-label="배경음악 켜기/끄기" aria-pressed="true">
+        <svg class="ic-on" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M15.5 8.5a5 5 0 0 1 0 7M19 5a9 9 0 0 1 0 14"/></svg>
+        <svg class="ic-off" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><line x1="22" y1="9" x2="16" y2="15"/><line x1="16" y1="9" x2="22" y2="15"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <audio id="bgm" src="/assets/audio/bgm.mp3" loop preload="auto"></audio>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg">
+      <img class="hero-poster" id="poster" alt="">
+      <video class="hero-video" id="video" muted loop playsinline preload="metadata"></video>
+    </div>
+    <div class="hero-scrim"></div>
+
+    <div class="hero-inner">
+      <div class="content anim-rise" id="content"><!-- rendered --></div>
+      <div class="photo-row">
+        <button class="m-arrow" id="prevM" aria-label="이전 지역">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        </button>
+        <div class="photos"><div class="photo-track" id="photoTrack"></div></div>
+        <button class="m-arrow" id="nextM" aria-label="다음 지역">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <div class="hero-nav">
+      <button class="arrow" id="prev" aria-label="이전 지역">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+      </button>
+      <div class="dots" id="dots"></div>
+      <button class="arrow" id="next" aria-label="다음 지역">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+      </button>
+    </div>
+  </section>
+
+  <!-- BOTTOM CTA -->
+  <div class="cta-bar">
+    <div class="cta-label">
+      <span class="t1" data-i18n="ctaT1"></span>
+      <span class="t2" data-i18n="ctaT2"></span>
+    </div>
+    <div class="cta-btns" id="ctaBtns"></div>
+  </div>
+
+  <!-- MODAL -->
+  <div class="modal-root" id="modalRoot" role="dialog" aria-modal="true" aria-label="클럽 상세">
+    <div class="modal-bd" data-close></div>
+    <div class="modal">
+      <div class="modal-head">
+        <div class="open-badge"><span class="live"></span>OPEN&nbsp;:&nbsp;<b id="openName"></b></div>
+        <button class="modal-close" id="modalClose" aria-label="닫기" data-close>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><line x1="6" y1="6" x2="18" y2="18"/><line x1="18" y1="6" x2="6" y2="18"/></svg>
+        </button>
+      </div>
+      <div class="tabs" id="tabs"></div>
+      <div class="tab-body">
+        <div class="panel" data-panel="price">
+          <div class="gallery" data-gal="price"></div>
+        </div>
+        <div class="panel" data-panel="interior">
+          <div class="gallery" data-gal="interior"></div>
+        </div>
+        <div class="panel" data-panel="qna">
+          <div class="qna" id="qnaList"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="toast-wrap"><div class="toast" id="toast"></div></div>
+</div>
+
+<script>
+/* ===================== DATA ===================== */
+const MANIFEST = {
+  hongdae:{video_desktop:"/assets/video/desktop/hongdae.mp4",video_mobile:"/assets/video/mobile/hongdae.mp4",hero:"/assets/hero/hongdae.webp",
+    interior:["/assets/hongdae/interior/01.webp","/assets/hongdae/interior/02.webp","/assets/hongdae/interior/03.webp","/assets/hongdae/interior/04.webp"],
+    price:["/assets/hongdae/price/01.webp","/assets/hongdae/price/02.webp","/assets/hongdae/price/03.webp"]},
+  cheongdam:{video_desktop:"/assets/video/desktop/cheongdam.mp4",video_mobile:"/assets/video/mobile/cheongdam.mp4",hero:"/assets/hero/cheongdam.webp",
+    interior:["/assets/cheongdam/interior/01.webp","/assets/cheongdam/interior/02.webp","/assets/cheongdam/interior/03.webp","/assets/cheongdam/interior/04.webp"],
+    price:["/assets/cheongdam/price/01.webp","/assets/cheongdam/price/02.webp","/assets/cheongdam/price/03.webp"]},
+  gangnam:{video_desktop:"/assets/video/desktop/gangnam.mp4",video_mobile:"/assets/video/mobile/gangnam.mp4",hero:"/assets/hero/gangnam.webp",
+    interior:["/assets/gangnam/interior/01.webp","/assets/gangnam/interior/02.webp","/assets/gangnam/interior/03.webp","/assets/gangnam/interior/04.webp","/assets/gangnam/interior/05.webp"],
+    price:["/assets/gangnam/price/01.webp","/assets/gangnam/price/02.webp","/assets/gangnam/price/03.webp"]},
+  apgujeong:{video_desktop:"/assets/video/desktop/apgujeong.mp4",video_mobile:"/assets/video/mobile/apgujeong.mp4",hero:"/assets/hero/apgujeong.webp",
+    interior:["/assets/apgujeong/interior/01.webp","/assets/apgujeong/interior/02.webp","/assets/apgujeong/interior/03.webp","/assets/apgujeong/interior/04.webp"],
+    price:["/assets/apgujeong/price/01.webp","/assets/apgujeong/price/02.webp","/assets/apgujeong/price/03.webp","/assets/apgujeong/price/04.webp"]}
+};
+
+const DISTRICTS = [
+  {slug:"hongdae", genre:"EDM · HIP-HOP", hours:"22:00 – 06:00",
+    name:{ko:"홍대 클럽",en:"HONGDAE",ja:"弘大",zh:"弘大"},
+    loc:{ko:"마포구",en:"Mapo-gu",ja:"麻浦区",zh:"麻浦区"},
+    age:{ko:"20대+",en:"20s+",ja:"20代〜",zh:"20岁+"},
+    open:{ko:"버뮤다",en:"Bermuda",ja:"Bermuda",zh:"Bermuda"},
+    desc:{ko:"다채로운 컨셉의 클럽과 펍이 밀집한 역동적인 나이트라이프의 중심지.",
+          en:"A hub of dynamic nightlife packed with clubs and pubs of every concept.",
+          ja:"多彩なコンセプトのクラブとパブが密集する、躍動的なナイトライフの中心地。",
+          zh:"汇聚多元概念俱乐部与酒吧的活力夜生活中心。"}},
+  {slug:"cheongdam", genre:"EDM · HIP-HOP · LOUNGE · PUB", hours:"03:00 – 12:00",
+    name:{ko:"청담 클럽",en:"CHEONGDAM",ja:"清潭",zh:"清潭"},
+    loc:{ko:"강남구",en:"Gangnam-gu",ja:"江南区",zh:"江南区"},
+    age:{ko:"30대+",en:"30s+",ja:"30代〜",zh:"30岁+"},
+    open:{ko:"+82",en:"+82",ja:"+82",zh:"+82"},
+    desc:{ko:"대한민국 클러빙의 최고 정점. 직원부터 손님까지 연예인·아이돌 출신.",
+          en:"The pinnacle of Korean clubbing — from staff to guests, celebrities and idols.",
+          ja:"韓国クラビングの最高峰。スタッフから客まで芸能人・アイドル出身。",
+          zh:"韩国夜店的巅峰，从员工到顾客皆有艺人、偶像出身。"}},
+  {slug:"gangnam", genre:"EDM · HIP-HOP", hours:"23:00 – 07:00",
+    name:{ko:"강남 클럽",en:"GANGNAM",ja:"江南",zh:"江南"},
+    loc:{ko:"강남구",en:"Gangnam-gu",ja:"江南区",zh:"江南区"},
+    age:{ko:"20대+",en:"20s+",ja:"20代〜",zh:"20岁+"},
+    open:{ko:"에이스 · +82",en:"Ace · +82",ja:"Ace · +82",zh:"Ace · +82"},
+    desc:{ko:"매일 밤 새로운 역사가 쓰여지는 곳. 대한민국 대표 클럽 지역, 강남.",
+          en:"Where new history is written every night — Gangnam, Korea's signature club district.",
+          ja:"毎晩新たな歴史が刻まれる場所。韓国を代表するクラブ街・江南。",
+          zh:"每晚书写全新历史之地，韩国代表性夜店街区江南。"}},
+  {slug:"apgujeong", genre:"EDM · HIP-HOP · LOUNGE", hours:"23:00 – 06:00",
+    name:{ko:"압구정 클럽",en:"APGUJEONG",ja:"狎鴎亭",zh:"狎鸥亭"},
+    loc:{ko:"강남구",en:"Gangnam-gu",ja:"江南区",zh:"江南区"},
+    age:{ko:"20대+",en:"20s+",ja:"20代〜",zh:"20岁+"},
+    open:{ko:"코어 · 컬러 · 코드 · DM",en:"Core · Color · Code · DM",ja:"Core · Color · Code · DM",zh:"Core · Color · Code · DM"},
+    desc:{ko:"대한민국 유동인구 2위 지역. 럭셔리하고 프라이빗한 상권의 중심.",
+          en:"Korea's 2nd busiest district — the heart of a luxurious, private commercial hub.",
+          ja:"韓国の流動人口2位エリア。ラグジュアリーでプライベートな商圏の中心。",
+          zh:"韩国客流量第二的区域，奢华私密商圈的中心。"}}
+];
+
+const QNA = [
+  {q:{ko:"게스트 무료입장이 가능한가요?",en:"Is free guest entry available?",ja:"ゲストの無料入場は可能ですか？",zh:"嘉宾可以免费入场吗？"},
+   a:{ko:"여성분들에 한하여 가능합니다.",en:"Free entry is available for women only.",ja:"女性のお客様に限り可能です。",zh:"仅限女性可免费入场。"}},
+  {q:{ko:"테이블 예약·게스트 문의는 어디로 하나요?",en:"Where do I make table reservations or guest inquiries?",ja:"テーブル予約・ゲストのお問い合わせはどこからできますか？",zh:"桌位预订·嘉宾咨询通过哪里联系？"},
+   a:{ko:"하단에 위치한 연락처를 통해 연락 주시기 바랍니다.",en:"Please reach out through the contact options at the bottom of the page.",ja:"画面下部の連絡先よりご連絡ください。",zh:"请通过页面底部的联系方式与我们联系。"}},
+  {q:{ko:"드레스코드는 어떻게 되나요?",en:"What's the dress code?",ja:"ドレスコードはありますか？",zh:"着装要求是怎样的？"},
+   a:{ko:"슬리퍼, 반바지, 츄리닝만 아니면 됩니다.",en:"Anything is fine except slippers, shorts, or sweatpants.",ja:"スリッパ・短パン・ジャージ以外であれば問題ありません。",zh:"只要不是拖鞋、短裤、运动服即可。"}},
+  {q:{ko:"테이블 가격대는 어떻게 되나요?",en:"What are the table price ranges?",ja:"テーブルの料金帯はどのくらいですか？",zh:"桌位的价格区间是怎样的？"},
+   a:{ko:"바(스탠딩)는 1바틀(30만 원)부터 가능합니다. 준메인 테이블은 100만 원, 메인 테이블은 200~300만 원입니다. 테이블 위치별로 가격이 상이하므로, 하단의 담당 매니저와 상담해 보시는 것을 추천드립니다.",
+      en:"Bar (standing) starts from 1 bottle (₩300,000). Sub-main tables are ₩1,000,000 and main tables ₩2,000,000–3,000,000. Prices vary by table location, so we recommend consulting the manager listed at the bottom.",
+      ja:"バー（スタンディング）は1ボトル（30万ウォン）から可能です。準メインテーブルは100万ウォン、メインテーブルは200〜300万ウォンです。テーブルの位置によって料金が異なるため、下部の担当マネージャーへのご相談をおすすめします。",
+      zh:"吧台（站位）从1瓶（30万韩元）起。次主桌为100万韩元，主桌为200~300万韩元。各桌位价格有所不同，建议通过页面底部的负责经理进行咨询。"}},
+  {q:{ko:"게스트 서비스는 어떤 게 있나요?",en:"What guest services are offered?",ja:"ゲスト向けのサービスには何がありますか？",zh:"嘉宾有哪些服务？"},
+   a:{ko:"담당 매니저 재량 하에 잔술이나 서비스 바틀 정도가 제공됩니다.",en:"At the manager's discretion, perks such as drinks by the glass or a complimentary bottle may be provided.",ja:"担当マネージャーの裁量により、グラスドリンクやサービスボトル程度のご提供があります。",zh:"在负责经理的酌情安排下，可提供单杯酒水或赠送一瓶酒等服务。"}},
+  {q:{ko:"테이블 서비스는 어떤 게 있나요?",en:"What table services are offered?",ja:"テーブルサービスには何がありますか？",zh:"桌位有哪些服务？"},
+   a:{ko:"5만 원을 추가하시면 여성을 매칭해 주는 보조 인원을 둘 수 있습니다. 또한 입장 시 줄을 서지 않아도 되며, 테이블 가격에 따라 전광판 등 VIP 의전을 이용하실 수 있습니다.",
+      en:"For an extra ₩50,000, a host who matches female guests can be arranged. You also skip the entry line, and depending on the table tier you can enjoy VIP treatment such as a shoutout on the LED screen.",
+      ja:"5万ウォンの追加で、女性をマッチングするスタッフを付けることができます。また入場時に並ぶ必要がなく、テーブルの料金に応じて電光掲示板などのVIP対応をご利用いただけます。",
+      zh:"额外支付5万韩元，可安排为您匹配女性的辅助人员。此外入场无需排队，并可根据桌位档次享受大屏幕展示等VIP礼遇。"}}
+];
+
+const I18N = {
+  ko:{detail:"자세히 보기",tPrice:"가격대",tInterior:"내부 전경",tQna:"이용 안내",
+      ctaT1:"예약 · 게스트 문의",ctaT2:"24시간 상담 가능",swipe:"좌우로 넘겨보세요",
+      mDistricts:"지역",mLang:"언어",title:"코리아클럽 · 강남 홍대 압구정 청담 클럽 게스트·테이블 예약"},
+  en:{detail:"View details",tPrice:"Pricing",tInterior:"Interior",tQna:"Guest info",
+      ctaT1:"Booking & guest inquiries",ctaT2:"Available 24/7",swipe:"Swipe to browse",
+      mDistricts:"Districts",mLang:"Language",title:"KOREACLUB · Gangnam·Hongdae·Apgujeong·Cheongdam Club Guestlist & Tables"},
+  ja:{detail:"詳細を見る",tPrice:"料金",tInterior:"店内",tQna:"ご利用案内",
+      ctaT1:"予約・ゲストのお問い合わせ",ctaT2:"24時間ご相談可能",swipe:"スワイプで切り替え",
+      mDistricts:"エリア",mLang:"言語",title:"KOREACLUB · 江南・弘大・狎鴎亭・清潭 クラブ ゲスト・テーブル予約"},
+  zh:{detail:"查看详情",tPrice:"价格",tInterior:"店内实景",tQna:"使用须知",
+      ctaT1:"预约 · 嘉宾咨询",ctaT2:"24小时咨询",swipe:"左右滑动浏览",
+      mDistricts:"地区",mLang:"语言",title:"KOREACLUB · 江南·弘大·狎鸥亭·清潭 夜店嘉宾·桌位预订"}
+};
+
+const LANGS = [
+  {code:"ko",img:"/assets/flags/kr.webp",name:"한국어"},
+  {code:"zh",img:"/assets/flags/cn.webp",name:"中文"},
+  {code:"ja",img:"/assets/flags/jp.webp",name:"日本語"},
+  {code:"en",img:"/assets/flags/us.webp",name:"English"}
+];
+
+const LINKS = {
+  sms:"sms:+821030590270",
+  kakao:"https://open.kakao.com/o/sONn7AAi",
+  telegram:"https://t.me/kr_clubs",
+  line:"https://line.me/ti/p/qAssq62X9m",
+  wechat:"krclubs",  // WeChat ID (copy)
+  tiktok:"https://www.tiktok.com/@the.seoul.club?_r=1&_t=ZS-97OZrJA5zcK"
+};
+const CTA_BY_LANG = {ko:["kakao","sms"],en:["kakao","sms"],zh:["wechat","telegram","kakao"],ja:["line","tiktok","kakao"]};
+const CHAN = {
+  sms:{label:{ko:"문자",en:"Text",ja:"SMS",zh:"短信"}},
+  kakao:{label:{ko:"카카오톡",en:"KakaoTalk",ja:"カカオトーク",zh:"KakaoTalk"}},
+  wechat:{label:{ko:"위챗",en:"WeChat",ja:"WeChat",zh:"微信"}},
+  telegram:{label:{ko:"텔레그램",en:"Telegram",ja:"Telegram",zh:"Telegram"}},
+  line:{label:{ko:"라인",en:"LINE",ja:"LINE",zh:"LINE"}},
+  tiktok:{label:{ko:"틱톡",en:"TikTok",ja:"TikTok",zh:"TikTok"}}
+};
+
+/* icons (generic, lean) */
+const IC = {
+  pin:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s7-6.4 7-11a7 7 0 1 0-14 0c0 4.6 7 11 7 11Z"/><circle cx="12" cy="10" r="2.4"/></svg>',
+  clock:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>',
+  users:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="8" r="3.2"/><path d="M3.5 19a5.5 5.5 0 0 1 11 0"/><path d="M16 6.2a3 3 0 0 1 0 5.6M16.5 14.2A5.5 5.5 0 0 1 20.5 19"/></svg>',
+  arrow:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="13 6 19 12 13 18"/></svg>',
+  zoom:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><line x1="16" y1="16" x2="21" y2="21"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>',
+  chev:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg>',
+  chat:'<svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 3C6.9 3 3 6.3 3 10.4c0 2.5 1.6 4.7 4 6-.2.9-.7 2.2-1.4 3.1-.2.3 0 .7.4.6 1.9-.4 3.4-1.2 4.2-1.7.9.2 1.8.3 1.8.3 5.1 0 9-3.3 9-7.6S17.1 3 12 3Z"/></svg>',
+  send:'<svg viewBox="0 0 24 24" fill="currentColor"><path d="M21.4 2.6 2.7 11.1c-.8.4-.7 1.5.1 1.7l5.1 1.6 1.6 5.1c.2.8 1.3.9 1.7.1l8.5-18.7c.3-.6-.3-1.2-.9-.9Z"/></svg>',
+  line:'<svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 3C6.5 3 2 6.6 2 11c0 3.9 3.4 7.2 8 7.9.3.1.7.2.8.5.1.3 0 .8 0 1.1l-.1.9c0 .3-.2 1 .9.6 1.1-.5 6-3.5 8.2-6C21.3 14.3 22 12.8 22 11c0-4.4-4.5-8-10-8Z"/></svg>',
+  note:'<svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 18V6l9-2v11"/><circle cx="6.5" cy="18" r="2.5"/><circle cx="15.5" cy="15" r="2.5"/></svg>',
+  wechat:'<svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 4C4.9 4 1.7 6.8 1.7 10.2c0 1.9 1 3.6 2.7 4.8l-.6 2 2.3-1.2c.9.3 1.9.4 2.9.4h.6a4.6 4.6 0 0 1-.2-1.4c0-3 2.9-5.3 6.4-5.3h.6C16.7 6.3 13.2 4 9 4Z"/><path d="M22.3 14.4c0-2.7-2.6-4.9-5.8-4.9s-5.8 2.2-5.8 4.9 2.6 4.9 5.8 4.9c.7 0 1.4-.1 2-.3l1.9 1-.5-1.7c1.4-.9 2.4-2.3 2.4-3.9Z"/></svg>'
+};
+const CHAN_ICON = {sms:IC.chat,kakao:IC.chat,wechat:IC.wechat,telegram:IC.send,line:IC.line,tiktok:IC.note};
+
+/* ===================== STATE ===================== */
+let lang = (function(){const l=(document.documentElement.lang||"ko").toLowerCase();return ["ko","zh","ja","en"].includes(l)?l:"ko";})();
+let idx = 0;
+const isMobile = () => window.matchMedia("(max-width:768px)").matches;
+const $ = s => document.querySelector(s);
+
+/* ===================== RENDER ===================== */
+function renderStatic(){
+  document.documentElement.lang = lang;
+  document.title = I18N[lang].title;
+  document.querySelectorAll("[data-i18n]").forEach(el=>{el.textContent = I18N[lang][el.dataset.i18n] || "";});
+
+  // district nav
+  $("#dnav").innerHTML = DISTRICTS.map((d,i)=>`<button data-i="${i}" class="${i===idx?'on':''}">${d.name[lang]}</button>`).join("");
+  // langs (flag images next to brand)
+  $("#langs").innerHTML = LANGS.map(l=>`<button data-lang="${l.code}" class="${l.code===lang?'on':''}" aria-label="${l.name}" title="${l.name}"><img src="${l.img}" alt="${l.name}"></button>`).join("");
+  // cta
+  renderCta();
+}
+
+function renderCta(){
+  const chans = CTA_BY_LANG[lang];
+  $("#ctaBtns").innerHTML = chans.map((c,i)=>{
+    const ghost = i>0 ? "ghost":"";
+    return `<button class="cta-btn ${ghost}" data-chan="${c}">${CHAN_ICON[c]}${CHAN[c].label[lang]}</button>`;
+  }).join("");
+}
+
+function renderHero(){
+  const d = DISTRICTS[idx];
+  $("#content").innerHTML = `
+    <div class="genre">${d.genre}</div>
+    <h1 class="title"><em>${d.name[lang]}</em></h1>
+    <p class="desc">${d.desc[lang]}</p>
+    <div class="meta">
+      <span class="chip">${IC.pin}${d.loc[lang]}</span>
+      <span class="chip">${IC.clock}${d.hours}</span>
+      <span class="chip">${IC.users}${d.age[lang]}</span>
+    </div>
+    <button class="btn-detail" id="openModalBtn">${I18N[lang].detail}${IC.arrow}</button>`;
+  // restart entrance animation
+  const c = $("#content"); c.classList.remove("anim-rise"); void c.offsetWidth; c.classList.add("anim-rise");
+  $("#openModalBtn").addEventListener("click", openModal);
+
+  // preview cards = the OTHER districts (hero photos), like the original slider queue
+  const others = [1,2,3].map(o=>(idx+o)%DISTRICTS.length);
+  $("#photoTrack").innerHTML = others.map(di=>{
+    const od = DISTRICTS[di];
+    return `<div class="photo" data-go="${di}">
+      <img src="${MANIFEST[od.slug].hero}" alt="${od.name[lang]}" loading="lazy">
+      <span class="photo-name">${od.name[lang]}</span>
+    </div>`;
+  }).join("");
+  $("#photoTrack").querySelectorAll(".photo").forEach(p=>p.addEventListener("click",()=>setDistrict(+p.dataset.go)));
+
+  // dots
+  $("#dots").innerHTML = DISTRICTS.map((_,i)=>`<span class="d ${i===idx?'on':''}"></span>`).join("");
+
+  // bg
+  loadHeroMedia(d);
+  // sync active states
+  $("#dnav").querySelectorAll("button").forEach(b=>b.classList.toggle("on", +b.dataset.i===idx));
+}
+
+function loadHeroMedia(d){
+  const poster = $("#poster"), video = $("#video");
+  poster.style.opacity = "1";
+  poster.src = MANIFEST[d.slug].hero;
+  const src = isMobile() ? MANIFEST[d.slug].video_mobile : MANIFEST[d.slug].video_desktop;
+  video.classList.remove("show");
+  video.src = src;
+  video.load();
+  video.play().catch(()=>{});
+  video.oncanplay = ()=>{ video.classList.add("show"); };
+}
+
+/* ===================== DISTRICT NAV ===================== */
+function setDistrict(i){
+  idx = (i + DISTRICTS.length) % DISTRICTS.length;
+  renderHero();
+}
+
+/* ===================== MODAL ===================== */
+let modalOpen = false, lastFocus = null;
+const GAL = {}; // slug+kind -> {i, n}
+
+function openModal(tab){
+  const d = DISTRICTS[idx];
+  $("#openName").textContent = d.open[lang];
+  // tabs
+  const tabsDef = [["price",I18N[lang].tPrice],["interior",I18N[lang].tInterior],["qna",I18N[lang].tQna]];
+  $("#tabs").innerHTML = tabsDef.map(([k,label],i)=>`<button class="tab" data-tab="${k}">${label}</button>`).join("");
+  $("#tabs").querySelectorAll(".tab").forEach(b=>b.addEventListener("click",()=>switchTab(b.dataset.tab)));
+
+  buildGallery("price", MANIFEST[d.slug].price, d.name[lang]);
+  buildGallery("interior", MANIFEST[d.slug].interior, d.name[lang]);
+  buildQna();
+
+  switchTab(tab && typeof tab==="string" ? tab : "price");
+
+  $("#modalRoot").classList.add("open");
+  document.body.style.overflow="hidden";
+  // pause hero video per wireframe
+  $("#video").pause();
+  modalOpen = true; lastFocus = document.activeElement;
+  $("#modalClose").focus();
+}
+function closeModal(){
+  $("#modalRoot").classList.remove("open");
+  document.body.style.overflow="";
+  $("#video").play().catch(()=>{});
+  modalOpen=false;
+  if(lastFocus) lastFocus.focus();
+}
+function switchTab(k){
+  $("#tabs").querySelectorAll(".tab").forEach(b=>b.classList.toggle("on", b.dataset.tab===k));
+  document.querySelectorAll(".panel").forEach(p=>p.classList.toggle("on", p.dataset.panel===k));
+}
+
+function buildGallery(kind, imgs, alt){
+  const root = document.querySelector(`[data-gal="${kind}"]`);
+  const key = kind;
+  GAL[key] = {i:0, n:imgs.length};
+  root.innerHTML = `
+    <div class="frame">
+      <div class="gbg"></div>
+      ${imgs.map((s,i)=>`<img src="${s}" class="${i===0?'on':''}" alt="${alt} ${kind} ${i+1}" loading="lazy">`).join("")}
+      ${imgs.length>1?`<button class="gnav prev" data-g="${key}" data-dir="-1" aria-label="이전">${IC.chev.replace('polyline points="6 9 12 15 18 9"','polyline points="15 6 9 12 15 18"')}</button>
+      <button class="gnav next" data-g="${key}" data-dir="1" aria-label="다음">${IC.chev.replace('polyline points="6 9 12 15 18 9"','polyline points="9 6 15 12 9 18"')}</button>`:''}
+    </div>
+    ${imgs.length>1?`<div class="gdots">${imgs.map((_,i)=>`<span class="gd ${i===0?'on':''}" data-g="${key}" data-i="${i}"></span>`).join("")}</div>
+    <div class="swipe-hint">${I18N[lang].swipe}</div>`:''}`;
+  root.querySelectorAll(".gnav").forEach(b=>b.addEventListener("click",()=>moveGal(key, +b.dataset.dir)));
+  root.querySelectorAll(".gd").forEach(b=>b.addEventListener("click",()=>gotoGal(key, +b.dataset.i)));
+  addSwipe(root.querySelector(".frame"), dir=>moveGal(key, dir));
+  showGal(key);
+}
+function showGal(key){
+  const root = document.querySelector(`[data-gal="${key}"]`);
+  const g = GAL[key];
+  const imgs = root.querySelectorAll(".frame img");
+  imgs.forEach((im,i)=>im.classList.toggle("on", i===g.i));
+  root.querySelectorAll(".gd").forEach((dd,i)=>dd.classList.toggle("on", i===g.i));
+  const gbg=root.querySelector(".gbg"), cur=imgs[g.i];
+  if(gbg&&cur) gbg.style.backgroundImage=`url("${cur.getAttribute('src')}")`;
+}
+function moveGal(key,dir){const g=GAL[key];g.i=(g.i+dir+g.n)%g.n;showGal(key);}
+function gotoGal(key,i){GAL[key].i=i;showGal(key);}
+
+function buildQna(){
+  $("#qnaList").innerHTML = QNA.map((item,i)=>`
+    <details class="qitem" ${i===0?'open':''}>
+      <summary><span class="qmk">Q</span>${item.q[lang]}<span class="chev">${IC.chev}</span></summary>
+      <div class="ans">${item.a[lang]}</div>
+    </details>`).join("");
+}
+
+/* ===================== SWIPE ===================== */
+function addSwipe(el, cb){
+  let x0=null;
+  el.addEventListener("touchstart",e=>{x0=e.changedTouches[0].clientX;},{passive:true});
+  el.addEventListener("touchend",e=>{
+    if(x0===null)return;
+    const dx=e.changedTouches[0].clientX-x0;
+    if(Math.abs(dx)>40) cb(dx<0?1:-1);
+    x0=null;
+  },{passive:true});
+}
+
+/* ===================== CTA actions ===================== */
+function ctaAction(chan){
+  if(chan==="wechat"){
+    navigator.clipboard?.writeText(LINKS.wechat).catch(()=>{});
+    toast(lang==="ko"?`위챗 ID 복사됨 · ${LINKS.wechat}`:lang==="zh"?`微信ID已复制 · ${LINKS.wechat}`:lang==="ja"?`WeChat IDをコピー · ${LINKS.wechat}`:`WeChat ID copied · ${LINKS.wechat}`);
+    return;
+  }
+  if(chan==="tiktok"){
+    if(!LINKS.tiktok){ toast(lang==="ko"?"틱톡 링크 준비 중":lang==="zh"?"TikTok链接准备中":lang==="ja"?"TikTokリンク準備中":"TikTok link coming soon"); return; }
+    window.open(LINKS.tiktok,"_blank","noopener"); return;
+  }
+  const href = LINKS[chan];
+  if(chan==="sms") location.href=href;
+  else window.open(href,"_blank","noopener");
+}
+
+/* ===================== TOAST ===================== */
+let toastTimer=null;
+function toast(msg){
+  const t=$("#toast"); t.textContent=msg; t.classList.add("show");
+  clearTimeout(toastTimer); toastTimer=setTimeout(()=>t.classList.remove("show"),2600);
+}
+
+/* ===================== EVENTS ===================== */
+$("#prev").addEventListener("click",()=>setDistrict(idx-1));
+$("#next").addEventListener("click",()=>setDistrict(idx+1));
+$("#prevM").addEventListener("click",()=>setDistrict(idx-1));
+$("#nextM").addEventListener("click",()=>setDistrict(idx+1));
+
+$("#dnav").addEventListener("click",e=>{const b=e.target.closest("button");if(b)setDistrict(+b.dataset.i);});
+$("#langs").addEventListener("click",e=>{const b=e.target.closest("button");if(b){lang=b.dataset.lang;renderStatic();renderHero();if(modalOpen)openModal($("#tabs .tab.on")?.dataset.tab);}});
+
+$("#ctaBtns").addEventListener("click",e=>{const b=e.target.closest("button");if(b)ctaAction(b.dataset.chan);});
+
+// modal close — closest() so clicks on the X icon's inner SVG also close
+$("#modalRoot").addEventListener("click",e=>{if(e.target.closest("[data-close]"))closeModal();});
+document.addEventListener("keydown",e=>{if(e.key==="Escape"&&modalOpen)closeModal();});
+
+// hero swipe (mobile) — switch district
+addSwipe($(".hero-inner"), dir=>{ if(!modalOpen) setDistrict(idx+dir); });
+
+// re-pick video orientation on resize threshold
+let wasMobile = isMobile();
+let rT=null;
+window.addEventListener("resize",()=>{
+  clearTimeout(rT);
+  rT=setTimeout(()=>{ if(isMobile()!==wasMobile){wasMobile=isMobile(); loadHeroMedia(DISTRICTS[idx]);} },200);
+});
+
+/* ===================== BACKGROUND MUSIC ===================== */
+const bgm = $("#bgm"), musicBtn = $("#musicToggle");
+bgm.volume = 0.8;
+let musicOn = true;
+function applyMusic(){
+  if(musicOn) bgm.play().catch(()=>{}); else bgm.pause();
+  musicBtn.classList.toggle("playing", musicOn);
+  musicBtn.classList.toggle("muted", !musicOn);
+  musicBtn.setAttribute("aria-pressed", musicOn ? "true" : "false");
+}
+musicBtn.addEventListener("click", e=>{ e.stopPropagation(); musicOn=!musicOn; applyMusic(); });
+applyMusic(); // initial autoplay attempt (kept at 80% volume)
+// browsers block audible autoplay until a gesture — resume on first interaction
+function unlockAudio(){
+  if(musicOn){ bgm.volume=0.8; bgm.play().catch(()=>{}); }
+  ["pointerdown","keydown","touchstart"].forEach(ev=>window.removeEventListener(ev,unlockAudio));
+}
+["pointerdown","keydown","touchstart"].forEach(ev=>window.addEventListener(ev,unlockAudio,{passive:true}));
+
+/* ===================== INIT ===================== */
+renderStatic();
+renderHero();
+</script>
+</body>
+</html>
